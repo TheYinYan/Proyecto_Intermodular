@@ -44,44 +44,51 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 ![imagen](/Img/Movil.png)
 
 > **Pantallas diseñadas:**
-> 1. **Pantalla de Carga:** Logo de Trukko con icono de engranaje animado y texto "Cargando...".
-> 2. **Pantalla de Login:** Formulario de usuario y contraseña sobre fondo azul, con el logo de Trukko.
-> 3. **Pantalla Home (con logo):** Barra superior con logo y buscador. Rejilla de 2 columnas con tarjetas de productos (imagen, icono de perfil, corazón de favorito). Barra de navegación inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
-> 4. **Pantalla Home (con desplazamiento):** Similar a la anterior, pero la barra superior muestra un buscador expandido y el logo se ha desplazado. La rejilla de productos es más grande.
-> 5. **Pantalla Home (menú superior):** Barra superior con icono de menú hamburguesa, logo centrado y acceso a "Tu Cuenta". Debajo, una barra de navegación horizontal con: Home, Favoritos, Sube, Mensajes. Rejilla de productos con imágenes, icono de perfil y corazones de favorito.
+> 1. **Pantalla de Carga:** Logo de Trukko con icono animado y texto "Cargando...".
+> 2. **Pantalla de Registro:** Formulario de usuario y contraseña, botón "Crear Ropero" y opción "Iniciar sin Ropero".
+> 3. **Pantalla de Inicio:** Barra superior con logo y buscador. Rejilla de 2 columnas con tarjetas (imagen, icono de perfil, corazón de favorito). Barra de navegación inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
+> 4. **Pantalla de Inicio con desplazamiento:** Similar a la anterior, pero la barra superior muestra un buscador expandido y el logo se ha desplazado. La rejilla de productos es más grande.
+> 5. **Pantalla de Creación (completa):** Vista previa de foto, botones "Subir foto" y "Tomar foto", formulario con Título, Descripción, Categoría, Estado, Valor aprox., Ubicación/Entrega, y botón "Crear objeto".
+> 6. **Pantalla de Mis Objetos:** Título "Mis objetos (12)", buscador, filtros por categoría, rejilla de tarjetas con imagen y botón "Editar", botón "Crear un objeto".
+> 7. **Pantalla de Perfil:** Foto de perfil, nombre, usuario, valoración (⭐ 4.8), ubicación, botón "Editar Perfil", y menú con: Mis objetos, Mis favoritos, Cerrar sesión.
+> 8. **Pantalla de Favoritos:** Título "Mis Favoritos (8)", buscador, filtros por categoría, rejilla de tarjetas con corazón relleno (❤️).
 
 ### **Diseño en Web**
 
 ![imagen](/Img/Web.png)
 
 > **Pantallas diseñadas:**
-> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko en la parte superior, un recuadro azul con el título "Login" y los campos de "Usuario" y "Contraseña". Diseño limpio y minimalista, ideal para escritorio.
-> 2. **Pantalla Home (Web):** 
->    - **Barra superior:** Icono de menú hamburguesa a la izquierda, logo de Trukko centrado, y a la derecha el icono de perfil con el texto "Tu Cuenta".
->    - **Barra de navegación horizontal:** Iconos para Home, Favoritos, Sube (+), Mensajes. Esta barra sustituye a la barra inferior del móvil, adaptándose al diseño web.
->    - **Rejilla de productos:** Organizada en 3 columnas, mostrando tarjetas con imagen, icono de perfil y corazón de favorito (relleno o vacío según si es favorito). Diseño espacioso y claro para pantallas grandes.
+> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko, campos de "Usuario" y "Contraseña", botón "Crear Ropero" y opción "Iniciar sin Ropero".
+> 2. **Pantalla de Inicio (Web):**
+>    - **Barra superior:** Menú hamburguesa, logo de Trukko centrado, icono de perfil "Tu Cuenta".
+>    - **Barra de navegación horizontal:** Home, Favoritos, Sube, Mensajes.
+>    - **Rejilla de productos:** 3 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
 
 ---
 
 ### **Funcionalidades clave:**
 
-- **Registro y login** de usuarios.
-- **Publicación de objetos** con imagen, descripción, estado y categoría (objetos, servicios, tareas).
+- **Registro y login** de usuarios (con opción de "Iniciar sin Ropero").
+- **Publicación de objetos** con imagen, título, descripción, categoría, estado y valor aproximado.
 - **Sistema de solicitudes** con estados: pendiente / aceptada / rechazada.
 - **Historial de intercambios** y valoraciones.
-- **Sistema de favoritos** (corazón en las tarjetas de producto).
+- **Sistema de favoritos** (corazón relleno/vacío).
 - **Mensajería interna** entre usuarios para negociar el trueque.
-- **Búsqueda y filtros** por categoría, estado, valoración, etc.
-- **Perfil de usuario** con sus objetos publicados, favoritos e historial.
+- **Búsqueda y filtros** por categoría (Objetos, Servicios, Tareas) y recientes.
+- **Perfil de usuario** con objetos publicados, favoritos e historial.
 - **Subida de imágenes** para los objetos publicados.
+
+---
 
 ### **Tecnologías previstas:**
 
 - **Backend:** Java + Spring Boot (API REST).
 - **Base de datos:** MySQL / PostgreSQL (usuarios, objetos, solicitudes, mensajes, favoritos).
-- **Frontend:** Angular o JS/TS (se valorará Angular por el uso de componentes y rutas).
+- **Frontend:** Angular o JS/TS.
 - **Subida de imágenes:** Multipart (almacenamiento local o en la nube).
 - **Mensajería:** WebSockets o polling para mensajes en tiempo real (opcional).
+
+---
 
 ### **Asignaturas que cubre:**
 
@@ -91,19 +98,25 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 - **Sistemas de Gestión Empresarial** → flujo de negocio con reglas (estados de solicitud), roles, permisos.
 - **Programación** → backend Java con buenas prácticas.
 
+---
+
 ### **Puntos fuertes:**
 
 - **Lógica de negocio real** (no es un CRUD plano): estados, solicitudes, mensajería, favoritos.
-- **Muy presentable en la defensa** gracias a los diseños móviles ya creados.
+- **Muy presentable en la defensa** gracias a los diseños móviles y web ya creados.
 - **Tarea programada** → cubre Programación de Servicios.
 - **Mensajería interna** → añade complejidad y valor al proyecto.
 - **Sistema de favoritos** → mejora la experiencia de usuario y la interactividad.
+- **Diseño responsive** → la misma app se adapta a móvil y web.
+
+---
 
 ### **Riesgos:**
 
 - **Más complejo de modelar** (estados, permisos, mensajería).
-- **Subida y gestión de imágenes** añade complejidad (almacenamiento, formatos, peso).
-- **Mensajería en tiempo real** puede requerir WebSockets o polling, lo que añade tiempo de desarrollo.
+- **Subida y gestión de imágenes** añade complejidad.
+- **Mensajería en tiempo real** puede requerir WebSockets o polling.
+- **Adaptación responsive** → asegurar que funciona en ambos formatos.
 
 ---
 
@@ -135,6 +148,8 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 4. **Definir los endpoints de la API REST** (ej: `/api/objetos`, `/api/solicitudes`, `/api/mensajes`).
 5. **Repartir tareas por asignatura** y crear issues en el repositorio.
 
+---
+
 [Ver Idea 2](/MeteoLook/Readme.md)
 
----
+[Ver Idea 3](/Plataforma%20de%20transicion%20profesional/Readme.md)

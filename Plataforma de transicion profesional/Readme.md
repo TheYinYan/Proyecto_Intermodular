@@ -688,3 +688,9 @@ Esto permitiría convertir el proceso de cambio profesional en un **itinerario c
 > **Cambiar de profesión no debería significar empezar desde cero.**
 >
 > La plataforma busca convertir la experiencia profesional de una persona en nuevas oportunidades, mostrando qué puede aprovechar, qué necesita aprender y cuál puede ser su siguiente paso profesional.
+
+---
+
+[Ver Idea 1](/Readme.md)
+
+[Ver Idea 2](/MeteoLook/Readme.md)
