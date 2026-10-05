@@ -39,30 +39,73 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 **Descripción:**
 Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, componentes, periféricos, servicios, tareas) y otros pueden solicitar un intercambio. El dueño acepta o rechaza la solicitud. La app incluye un sistema de favoritos y mensajería interna para gestionar los trueques.
 
+---
+
 ### **Diseño en Móvil**
 
 ![imagen](/Img/Movil.png)
 
 > **Pantallas diseñadas:**
+>
 > 1. **Pantalla de Carga:** Logo de Trukko con icono animado y texto "Cargando...".
-> 2. **Pantalla de Registro:** Formulario de usuario y contraseña, botón "Crear Ropero" y opción "Iniciar sin Ropero".
-> 3. **Pantalla de Inicio:** Barra superior con logo y buscador. Rejilla de 2 columnas con tarjetas (imagen, icono de perfil, corazón de favorito). Barra de navegación inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
-> 4. **Pantalla de Inicio con desplazamiento:** Similar a la anterior, pero la barra superior muestra un buscador expandido y el logo se ha desplazado. La rejilla de productos es más grande.
-> 5. **Pantalla de Creación (completa):** Vista previa de foto, botones "Subir foto" y "Tomar foto", formulario con Título, Descripción, Categoría, Estado, Valor aprox., Ubicación/Entrega, y botón "Crear objeto".
-> 6. **Pantalla de Mis Objetos:** Título "Mis objetos (12)", buscador, filtros por categoría, rejilla de tarjetas con imagen y botón "Editar", botón "Crear un objeto".
-> 7. **Pantalla de Perfil:** Foto de perfil, nombre, usuario, valoración (⭐ 4.8), ubicación, botón "Editar Perfil", y menú con: Mis objetos, Mis favoritos, Cerrar sesión.
-> 8. **Pantalla de Favoritos:** Título "Mis Favoritos (8)", buscador, filtros por categoría, rejilla de tarjetas con corazón relleno (❤️).
+> 2. **Pantalla de Registro:** Formulario de usuario y contraseña, botón "Iniciar sesión" y opción "Iniciar sin Ropero".
+> 3. **Pantalla de Inicio:**
+>    - Barra superior: menú hamburguesa, logo "Trukko", icono de perfil "Tu Cuenta".
+>    - Barra de navegación horizontal: Inicio, Favoritos, Subir, Mensaje.
+>    - Buscador y rejilla de 2 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
+>    - Barra inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
+> 4. **Pantalla de Inicio con desplazamiento:** Similar a la anterior, con buscador expandido y rejilla más grande.
+> 5. **Pantalla de Creación (Crear Objeto):**
+>    - Vista previa de foto, botones "Subir foto" y "Tomar foto".
+>    - Formulario: Título, Descripción, Categoría (Select), Estado (Select), Valor aprox. (€).
+>    - Botón "Crear objeto".
+> 6. **Pantalla de Mis Objetos:**
+>    - Título "Mis objetos (12)".
+>    - Buscador, filtros: [Todos] [Objetos] [Servicios] [Tareas] [Recientes].
+>    - Rejilla de tarjetas con imagen, botón "Editar" y corazón.
+>    - Botón "Crear un objeto".
+> 7. **Pantalla de Favoritos:**
+>    - Título "Mis Favoritos (8)".
+>    - Buscador, filtros: [Todos] [Objetos] [Servicios] [Tareas] [Recientes].
+>    - Rejilla de tarjetas con imagen, título y corazón relleno (❤️).
+>    - Botón "Crear un objeto".
+> 8. **Pantalla de Perfil (Ajuste de Perfil):**
+>    - Foto de perfil con botones "Subir foto" y "Tomar foto".
+>    - Botón "Editar Perfil".
+>    - Nombre Usuario: Samuel, ⭐ 4.8 (23 valoraciones), Ubicación: 📍 Madrid.
+>    - Opciones: Mis objetos (12), Mis Favoritos (8), Mensajes (5), Cerrar sesión.
+> 9. **Pantalla de Mensajes (Lista de Chats):**
+>    - Título "Mensajes (5)".
+>    - Buscador de conversaciones.
+>    - Lista de chats con: Usuario, Hora, Último Mensaje, Objeto a intercambiar, y badge rojo de no leídos.
+>    - Ejemplos: Mari Paz (12:30, "¿Te interesa el libro?", Libro de Java), Carlos (11:15, "Te lo cambio por...", Auriculares), Luis Díaz (Ayer, "¿Tienes el Curso Java?", Manual TypeScript).
+> 10. **Pantalla de Chat Individual:**
+>     - Barra superior: "Usuario" y "Objeto a intercambiar".
+>     - Tarjeta del objeto ofrecido con botón "Ver Objeto".
+>     - Burbujas de mensaje (izquierda: otro usuario, derecha: tú).
+>     - Campo de texto "Escribe un mensaje..." con icono de enviar.
+>     - Barra inferior con el icono de Mensajes activo.
+
+---
 
 ### **Diseño en Web**
 
 ![imagen](/Img/Web.png)
 
 > **Pantallas diseñadas:**
-> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko, campos de "Usuario" y "Contraseña", botón "Crear Ropero" y opción "Iniciar sin Ropero".
+>
+> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko, campos de "Usuario" y "Contraseña", botón "Iniciar sesión" y opción "Iniciar sin Ropero".
 > 2. **Pantalla de Inicio (Web):**
->    - **Barra superior:** Menú hamburguesa, logo de Trukko centrado, icono de perfil "Tu Cuenta".
->    - **Barra de navegación horizontal:** Home, Favoritos, Sube, Mensajes.
->    - **Rejilla de productos:** 3 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
+>    - Barra superior: menú hamburguesa, logo de Trukko centrado, icono de perfil "Tu Cuenta".
+>    - Barra de navegación horizontal: Inicio, Favoritos, Subir, Mensaje.
+>    - Buscador y rejilla de 4 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
+>    - Barra inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
+> 3. **Pantalla de Creación (Crear Objeto):** Similar a la móvil, pero adaptada a escritorio.
+> 4. **Pantalla de Mis Objetos:** Similar a la móvil, con rejilla más amplia.
+> 5. **Pantalla de Favoritos:** Similar a la móvil, con rejilla más amplia.
+> 6. **Pantalla de Ajuste de Perfil:** Similar a la móvil, adaptada a escritorio.
+> 7. **Pantalla de Mensajes (Lista de Chats):** Similar a la móvil, con más espacio.
+> 8. **Pantalla de Chat Individual:** Similar a la móvil, adaptada a escritorio.
 
 ---
 
@@ -75,7 +118,7 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 - **Sistema de favoritos** (corazón relleno/vacío).
 - **Mensajería interna** entre usuarios para negociar el trueque.
 - **Búsqueda y filtros** por categoría (Objetos, Servicios, Tareas) y recientes.
-- **Perfil de usuario** con objetos publicados, favoritos e historial.
+- **Perfil de usuario** con objetos publicados, favoritos, mensajes e historial.
 - **Subida de imágenes** para los objetos publicados.
 
 ---
@@ -92,7 +135,7 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 
 ### **Asignaturas que cubre:**
 
-- **Acceso a Datos** → relaciones usuario-objeto-solicitud, transacciones, estados, historial.
+- **Acceso a Datos** → relaciones usuario-objeto-solicitud-mensaje, transacciones, estados, historial.
 - **Desarrollo de Interfaces** → listados, detalle, formularios con imagen, sistema de favoritos, mensajería, navegación móvil/web.
 - **Programación de Servicios y Procesos** → API REST, tareas programadas (caducidad de solicitudes), mensajería (hilos/WebSockets).
 - **Sistemas de Gestión Empresarial** → flujo de negocio con reglas (estados de solicitud), roles, permisos.
