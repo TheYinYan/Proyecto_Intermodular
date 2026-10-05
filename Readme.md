@@ -150,6 +150,6 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 
 ---
 
-[Ver Idea 2](/MeteoLook/Readme.md)
+[Ver Idea 2 - MeteoLook](/MeteoLook/Readme.md)
 
-[Ver Idea 3](/Plataforma%20de%20transicion%20profesional/Readme.md)
+[Ver Idea 3 - Plataforma de transicion profesional](/Plataforma%20de%20transicion%20profesional/Readme.md)

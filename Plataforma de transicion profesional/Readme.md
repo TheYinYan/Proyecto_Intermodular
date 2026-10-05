@@ -691,6 +691,6 @@ Esto permitiría convertir el proceso de cambio profesional en un **itinerario c
 
 ---
 
-[Ver Idea 1](/Readme.md)
+[Ver Idea 1 - Trukko](/Readme.md)
 
-[Ver Idea 2](/MeteoLook/Readme.md)
+[Ver Idea 2 - MeteoLook](/MeteoLook/Readme.md)
