@@ -182,4 +182,6 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ---
 
+[Ver Idea 1](/Readme.md)
+
 > ⭐ "Si esperas el sol, no llega; si sales con paraguas, escampa." ⭐
