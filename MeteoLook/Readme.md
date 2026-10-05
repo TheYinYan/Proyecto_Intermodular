@@ -41,15 +41,35 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ### **Diseño en Móvil**
 
-![imagen](/Img/MeteoLookM.png)
+![imagen](/Img/Movil-MeteoLook.png)
 
-> Pantallas incluidas: Carga, Registro, Inicio, Creación de prenda, Mi Ropero y Tiempo.
+> **Pantallas diseñadas:**
+> 1. **Pantalla de Carga:** Logo de MeteoLook con icono animado y texto "Cargando...".
+> 2. **Pantalla de Registro:** Formulario de usuario y contraseña, botón "Crear Ropero" y opción "Iniciar sin Ropero".
+> 3. **Pantalla de Inicio:** Saludo personalizado, conjunto del día con imagen y descripción, estado del clima, botón "Otra combinación" y botón "¿Ya te lo pusiste? Súbete una foto". Barra de navegación inferior con 5 iconos.
+> 4. **Pantalla de Creación de Prenda:** Subir foto desde galería o cámara, selección de tipo, color, temporada y ocasión, campo de notas y botón "Guardar prenda".
+> 5. **Pantalla "Mi Ropero":** Listado de prendas con imagen, tipo y color, buscador, filtros por tipo/color/temporada/ocasión y botón "Añadir prenda".
+> 6. **Pantalla de Tiempo:** Clima actual (temperatura, estado, ciudad, humedad, viento, sensación térmica), previsión de próximos días, sugerencia de conjunto y frase del día.
 
 ### **Diseño en Web**
 
-![imagen](/Web-MeteoLook.png)
+![imagen](/Img/Web-MeteoLook.png)
 
-> _(Pendiente de subir el diseño web definitivo)_
+> **Pantallas diseñadas:**
+> 1. **Pantalla de Registro:** Interfaz centrada con el logo de MeteoLook, campos de "Usuario" y "Contraseña", botón "Crear Ropero" y opción "Iniciar sin Ropero" en la esquina inferior derecha.
+> 2. **Pantalla de Inicio:**
+>    - **Barra superior:** Menú hamburguesa a la izquierda, logo de MeteoLook centrado, icono de perfil a la derecha.
+>    - **Barra de navegación horizontal:** Iconos para Conjunto, Subir Ropa, Ropero y Tiempo.
+>    - **Contenido principal:** Saludo personalizado ("Hola Samuel..."), conjunto del día con imagen y descripción, estado del clima, botón "Otra combinación" con corazón, y botón "¿Ya te lo pusiste? Súbete una foto".
+> 3. **Pantalla de Creación de Prenda:**
+>    - **Barra superior:** Igual que en Inicio.
+>    - **Formulario:** Título "Nueva Prenda", área para subir o tomar foto, selección de tipo, color, temporada y ocasión, campo de notas y botón "Guardar prenda".
+> 4. **Pantalla "Mi Ropero":**
+>    - **Barra superior:** Igual que en Inicio.
+>    - **Listado:** Título "Mi Ropero (12 prendas)", buscador, filtros por tipo/color/temporada/ocasión, rejilla de tarjetas con imagen, tipo y color, y botón "Añadir prenda".
+> 5. **Pantalla de Tiempo:**
+>    - **Barra superior:** Igual que en Inicio.
+>    - **Contenido:** Saludo personalizado, clima actual (18°C Nublado, Madrid, humedad, viento, sensación térmica), previsión de próximos días (lun, mar, mié, jue), sugerencia de conjunto para hoy con botón "Ver conjunto", y frase del día.
 
 ---
 
@@ -58,7 +78,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 - **Registro y login** de usuarios (con opción de "Iniciar sin ropero" para probar la app).
 - **Pantalla de carga** con logo animado.
 - **Pantalla de inicio** con:
-  - Saludo personalizado ("Hola Samuel...").
+  - Saludo personalizado.
   - Conjunto del día (imagen + descripción de por qué se ha elegido).
   - Estado del clima actual.
   - Botón "Otra combinación".
@@ -90,11 +110,11 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ### **Tecnologías previstas:**
 
-- Backend: Java + Spring Boot + HttpClient (para API del clima).
-- Base de datos: MySQL / PostgreSQL (usuarios, prendas, conjuntos, historial).
-- Frontend: Angular o JS/TS.
-- Subida de imágenes (multipart) y almacenamiento local o en la nube.
-- API externa: OpenWeather (o similar).
+- **Backend:** Java + Spring Boot + HttpClient (para API del clima).
+- **Base de datos:** MySQL / PostgreSQL (usuarios, prendas, conjuntos, historial).
+- **Frontend:** Angular o JS/TS.
+- **Subida de imágenes:** Multipart (almacenamiento local o en la nube).
+- **API externa:** OpenWeather (o similar).
 
 > _(Completar cuando se decida el stack definitivo)_
 
@@ -117,6 +137,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 - API externa → cubre Programación de Servicios.
 - Subida de imágenes → cubre Desarrollo de Interfaces y Acceso a Datos.
 - Muy visual y fácil de demostrar en vivo.
+- **Diseño responsive** → la misma app se adapta a móvil y web con cambios en la navegación (barra inferior vs. superior).
 
 ---
 
@@ -125,6 +146,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 - Subida y gestión de imágenes añade complejidad (almacenamiento, formatos, peso).
 - Dependencia de una API externa (hay que manejar errores y límites de peticiones).
 - El algoritmo de recomendación puede volverse complejo si se quiere hacer "inteligente" de verdad.
+- **Adaptación responsive** → hay que asegurar que la interfaz funciona bien en ambos formatos.
 
 ---
 
@@ -159,7 +181,5 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 5. Repartir tareas por asignatura y crear issues en el repositorio.
 
 ---
-
-[Ver Idea 1](../Readme.md)
 
 > ⭐ "Si esperas el sol, no llega; si sales con paraguas, escampa." ⭐
