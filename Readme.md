@@ -74,7 +74,12 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 - Más complejo de modelar (estados, permisos).
 
 ### **Ideas Planteadas**
-- Intercambio de servicios
 
 #### **1. Uso IA**
 - Que la IA le de un valor estimado para luego buscar productos de un valor similar
+- En la Ayuda de la creacion de un nuevo producto
+
+#### **2. Seciones**
+- Intercambio de Tareas
+- Intercambio de Servicios
+- Intercambio de Objetos Variados
