@@ -39,6 +39,13 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 **Descripción:**
 Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, componentes, periféricos) y otros pueden solicitar un intercambio. El dueño acepta o rechaza la solicitud.
 
+### **Diseño en Movil**
+![imagen](/Movil.png)
+
+### **Diseño en Web**
+![imagen](/Web.png)
+
+
 ### **Funcionalidades clave:**
 - Registro y login.
 - Publicación de objetos con imagen, descripción y estado.
