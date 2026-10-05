@@ -8,7 +8,7 @@
 
 | Nombre   | Rol propuesto     | GitHub |
 |----------|-------------------|--------|
-| Samuel   | Programador/Lider | [Enlace](https://github.com/TheYinYan) |
+| Samuel   | Programador/Líder | [Enlace](https://github.com/TheYinYan) |
 | Mari Paz | Programador       | [Enlace](https://github.com/mpjmar)    |
 
 > Los roles son orientativos y se pueden rotar durante el proyecto.
@@ -37,49 +37,104 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 ## 🛒 "Trukko": Trueque de Objetos
 
 **Descripción:**
-Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, componentes, periféricos) y otros pueden solicitar un intercambio. El dueño acepta o rechaza la solicitud.
+Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, componentes, periféricos, servicios, tareas) y otros pueden solicitar un intercambio. El dueño acepta o rechaza la solicitud. La app incluye un sistema de favoritos y mensajería interna para gestionar los trueques.
 
-### **Diseño en Movil**
-![imagen](/Movil.png)
+### **Diseño en Móvil**
+
+![imagen](/Img/Movil.png)
+
+> **Pantallas diseñadas:**
+> 1. **Pantalla de Carga:** Logo de Trukko con icono de engranaje animado y texto "Cargando...".
+> 2. **Pantalla de Login:** Formulario de usuario y contraseña sobre fondo azul, con el logo de Trukko.
+> 3. **Pantalla Home (con logo):** Barra superior con logo y buscador. Rejilla de 2 columnas con tarjetas de productos (imagen, icono de perfil, corazón de favorito). Barra de navegación inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
+> 4. **Pantalla Home (con desplazamiento):** Similar a la anterior, pero la barra superior muestra un buscador expandido y el logo se ha desplazado. La rejilla de productos es más grande.
+> 5. **Pantalla Home (menú superior):** Barra superior con icono de menú hamburguesa, logo centrado y acceso a "Tu Cuenta". Debajo, una barra de navegación horizontal con: Home, Favoritos, Sube, Mensajes. Rejilla de productos con imágenes, icono de perfil y corazones de favorito.
 
 ### **Diseño en Web**
-![imagen](/Web.png)
 
+![imagen](/Img/Web.png)
+
+> **Pantallas diseñadas:**
+> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko en la parte superior, un recuadro azul con el título "Login" y los campos de "Usuario" y "Contraseña". Diseño limpio y minimalista, ideal para escritorio.
+> 2. **Pantalla Home (Web):** 
+>    - **Barra superior:** Icono de menú hamburguesa a la izquierda, logo de Trukko centrado, y a la derecha el icono de perfil con el texto "Tu Cuenta".
+>    - **Barra de navegación horizontal:** Iconos para Home, Favoritos, Sube (+), Mensajes. Esta barra sustituye a la barra inferior del móvil, adaptándose al diseño web.
+>    - **Rejilla de productos:** Organizada en 3 columnas, mostrando tarjetas con imagen, icono de perfil y corazón de favorito (relleno o vacío según si es favorito). Diseño espacioso y claro para pantallas grandes.
+
+---
 
 ### **Funcionalidades clave:**
-- Registro y login.
-- Publicación de objetos con imagen, descripción y estado.
-- Sistema de solicitudes con estados: pendiente / aceptada / rechazada.
-- Historial de intercambios.
+
+- **Registro y login** de usuarios.
+- **Publicación de objetos** con imagen, descripción, estado y categoría (objetos, servicios, tareas).
+- **Sistema de solicitudes** con estados: pendiente / aceptada / rechazada.
+- **Historial de intercambios** y valoraciones.
+- **Sistema de favoritos** (corazón en las tarjetas de producto).
+- **Mensajería interna** entre usuarios para negociar el trueque.
+- **Búsqueda y filtros** por categoría, estado, valoración, etc.
+- **Perfil de usuario** con sus objetos publicados, favoritos e historial.
+- **Subida de imágenes** para los objetos publicados.
 
 ### **Tecnologías previstas:**
-- Backend: (...).
-- Base de datos: (...).
-- Frontend: Angular o JS/TS.
-- Subida de imágenes (...).
+
+- **Backend:** Java + Spring Boot (API REST).
+- **Base de datos:** MySQL / PostgreSQL (usuarios, objetos, solicitudes, mensajes, favoritos).
+- **Frontend:** Angular o JS/TS (se valorará Angular por el uso de componentes y rutas).
+- **Subida de imágenes:** Multipart (almacenamiento local o en la nube).
+- **Mensajería:** WebSockets o polling para mensajes en tiempo real (opcional).
 
 ### **Asignaturas que cubre:**
-- Acceso a Datos (transacciones, estados).
-- Desarrollo de Interfaces (listados, detalle, formularios con imagen).
-- Programación de Servicios (tareas programadas con hilos).
-- Sistemas de Gestión Empresarial (flujo de negocio con reglas).
-- Programación (backend Java).
+
+- **Acceso a Datos** → relaciones usuario-objeto-solicitud, transacciones, estados, historial.
+- **Desarrollo de Interfaces** → listados, detalle, formularios con imagen, sistema de favoritos, mensajería, navegación móvil/web.
+- **Programación de Servicios y Procesos** → API REST, tareas programadas (caducidad de solicitudes), mensajería (hilos/WebSockets).
+- **Sistemas de Gestión Empresarial** → flujo de negocio con reglas (estados de solicitud), roles, permisos.
+- **Programación** → backend Java con buenas prácticas.
 
 ### **Puntos fuertes:**
-- Lógica de negocio real (no es un CRUD plano).
-- Muy presentable en la defensa.
-- Tarea programada → toca Programación de Servicios.
 
-**Riesgos:**
-- Más complejo de modelar (estados, permisos).
+- **Lógica de negocio real** (no es un CRUD plano): estados, solicitudes, mensajería, favoritos.
+- **Muy presentable en la defensa** gracias a los diseños móviles ya creados.
+- **Tarea programada** → cubre Programación de Servicios.
+- **Mensajería interna** → añade complejidad y valor al proyecto.
+- **Sistema de favoritos** → mejora la experiencia de usuario y la interactividad.
+
+### **Riesgos:**
+
+- **Más complejo de modelar** (estados, permisos, mensajería).
+- **Subida y gestión de imágenes** añade complejidad (almacenamiento, formatos, peso).
+- **Mensajería en tiempo real** puede requerir WebSockets o polling, lo que añade tiempo de desarrollo.
+
+---
 
 ### **Ideas Planteadas**
 
 #### **1. Uso IA**
-- Que la IA le de un valor estimado para luego buscar productos de un valor similar
-- En la Ayuda de la creacion de un nuevo producto
+- Que la IA le dé un **valor estimado** a los objetos para luego buscar productos de un valor similar.
+- **Ayuda en la creación** de un nuevo producto: sugerir categoría, descripción o valoración basada en la imagen.
+- **Recomendaciones personalizadas** de objetos según el historial del usuario.
 
-#### **2. Seciones**
-- Intercambio de Tareas
-- Intercambio de Servicios
-- Intercambio de Objetos Variados
+#### **2. Secciones**
+- **Intercambio de Tareas** → usuarios ofrecen realizar tareas a cambio de otras.
+- **Intercambio de Servicios** → usuarios ofrecen servicios (clases, reparaciones) a cambio de otros.
+- **Intercambio de Objetos Variados** → libros, apuntes, componentes, periféricos, etc.
+
+#### **3. Extras posibles**
+- **Modo "trueque rápido"** con coincidencia automática entre usuarios.
+- **Estadísticas** de trueques realizados, objetos más solicitados, etc.
+- **Notificaciones push** para nuevas solicitudes o mensajes.
+- **Integración con calendario** para tareas o servicios con fecha.
+
+---
+
+## 📅 Próximos pasos
+
+1. **Validar el diseño de pantallas** (móvil y web) con el equipo.
+2. **Decidir el stack definitivo** (backend, frontend, base de datos, mensajería).
+3. **Esbozar el modelo de datos** (usuarios, objetos, solicitudes, mensajes, favoritos).
+4. **Definir los endpoints de la API REST** (ej: `/api/objetos`, `/api/solicitudes`, `/api/mensajes`).
+5. **Repartir tareas por asignatura** y crear issues en el repositorio.
+
+[Ver Idea 2](/MeteoLook/Readme.md)
+
+---
