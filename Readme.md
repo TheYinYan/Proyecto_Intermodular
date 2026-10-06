@@ -1,4 +1,4 @@
-# 🎓 Proyecto Intermodular 2DAM — Trukko
+# 🎓 Proyecto Intermodular 2DAM — Lookeo
 
 > Repositorio de trabajo para la elección, planificación y desarrollo del Proyecto Intermodular de 2DAM.
 
@@ -34,10 +34,20 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 
 ---
 
-## 🛒 "Trukko": Trueque de Objetos
+## 👕 "Lookeo": Armario Virtual con Probador IA
 
 **Descripción:**
-Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, componentes, periféricos, servicios, tareas) y otros pueden solicitar un intercambio. El dueño acepta o rechaza la solicitud. La app incluye un sistema de favoritos y mensajería interna para gestionar los trueques.
+Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo, color, temporada, ocasión) y la app le sugiere combinaciones de conjuntos. Además, incluye un **probador virtual con IA** que muestra cómo le queda la ropa al usuario, y permite guardar los conjuntos en la sección **Outfits**.
+
+**Paleta de colores:**
+- **Negro** (#000000) → fondo principal.
+- **Dorado** (#D4AF37) → acentos, botones, logo.
+- **Blanco** (#FFFFFF) → textos y elementos secundarios.
+
+**Estilos de moda que promueve:**
+- **Old Money / Elegante clásico:** blazers, camisas, pantalones de vestir, mocasines.
+- **Streetwear de lujo:** sudaderas oversize, zapatillas de diseño, chaquetas bomber.
+- **Minimalista / Clean:** básicos, colores neutros, líneas simples.
 
 ---
 
@@ -47,44 +57,44 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 
 > **Pantallas diseñadas:**
 >
-> 1. **Pantalla de Carga:** Logo de Trukko con icono animado y texto "Cargando...".
-> 2. **Pantalla de Registro:** Formulario de usuario y contraseña, botón "Iniciar sesión" y opción "Iniciar sin Ropero".
-> 3. **Pantalla de Inicio:**
->    - Barra superior: menú hamburguesa, logo "Trukko", icono de perfil "Tu Cuenta".
->    - Barra de navegación horizontal: Inicio, Favoritos, Subir, Mensaje.
->    - Buscador y rejilla de 2 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
->    - Barra inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
-> 4. **Pantalla de Inicio con desplazamiento:** Similar a la anterior, con buscador expandido y rejilla más grande.
-> 5. **Pantalla de Creación (Crear Objeto):**
+> 1. **Pantalla de Carga:** Logo de Lookeo (dorado sobre negro) con icono animado y texto "Cargando...".
+> 2. **Pantalla de Registro:** Formulario de usuario y contraseña sobre fondo negro, botón dorado "Iniciar Sesión".
+> 3. **Pantalla de Inicio (Conjunto del día):**
+>    - Barra superior: menú hamburguesa, logo "Lookeo", icono de perfil.
+>    - Barra de navegación horizontal: Conjunto, Subir Ropa, Ropero, Probador.
+>    - Saludo personalizado ("Hola Samuel...").
+>    - Imagen del conjunto del día + descripción.
+>    - Columna derecha: descripción del porqué, estado del clima, estilo.
+>    - Botón "Otra combinación" + corazón.
+>    - Botón "¿Ya te lo pusiste? Súbete una foto".
+>    - Barra inferior con 4 iconos: Inicio, Subir (+), Ropero, Probador.
+> 4. **Pantalla de Creación (Nueva Prenda):**
 >    - Vista previa de foto, botones "Subir foto" y "Tomar foto".
->    - Formulario: Título, Descripción, Categoría (Select), Estado (Select), Valor aprox. (€).
->    - Botón "Crear objeto".
-> 6. **Pantalla de Mis Objetos:**
->    - Título "Mis objetos (12)".
->    - Buscador, filtros: [Todos] [Objetos] [Servicios] [Tareas] [Recientes].
->    - Rejilla de tarjetas con imagen, botón "Editar" y corazón.
->    - Botón "Crear un objeto".
-> 7. **Pantalla de Favoritos:**
->    - Título "Mis Favoritos (8)".
->    - Buscador, filtros: [Todos] [Objetos] [Servicios] [Tareas] [Recientes].
->    - Rejilla de tarjetas con imagen, título y corazón relleno (❤️).
->    - Botón "Crear un objeto".
-> 8. **Pantalla de Perfil (Ajuste de Perfil):**
->    - Foto de perfil con botones "Subir foto" y "Tomar foto".
+>    - Formulario: Tipo, Color, Temporada, Ocasión, Notas.
+>    - Botón "Guardar prenda".
+> 5. **Pantalla de Ropero:**
+>    - Título "Mi Ropero".
+>    - Buscador, filtros por tipo, color y temporada.
+>    - Rejilla de tarjetas con imagen, tipo y color.
+>    - Botón "Añadir prenda".
+> 6. **Pantalla de Probador (IA):**
+>    - Título "Probador".
+>    - Área de subida de foto del usuario (Subir foto / Tomar foto).
+>    - Filtros por categoría: Parte superior, Parte inferior, Calzado.
+>    - Selector de estilo (Casual, Formal, Urbano, Deportivo, Elegante, Streetwear).
+>    - Botón "Probar conjunto" (genera la imagen con IA).
+>    - Resultado: foto del usuario con el conjunto puesto.
+>    - Botón "Otra combinación" + corazón.
+>    - Botón "Guardar en Outfits".
+> 7. **Pantalla de Perfil:**
+>    - Foto de perfil, nombre, usuario, ubicación.
 >    - Botón "Editar Perfil".
->    - Nombre Usuario: Samuel, ⭐ 4.8 (23 valoraciones), Ubicación: 📍 Madrid.
->    - Opciones: Mis objetos (12), Mis Favoritos (8), Mensajes (5), Cerrar sesión.
-> 9. **Pantalla de Mensajes (Lista de Chats):**
->    - Título "Mensajes (5)".
->    - Buscador de conversaciones.
->    - Lista de chats con: Usuario, Hora, Último Mensaje, Objeto a intercambiar, y badge rojo de no leídos.
->    - Ejemplos: Mari Paz (12:30, "¿Te interesa el libro?", Libro de Java), Carlos (11:15, "Te lo cambio por...", Auriculares), Luis Díaz (Ayer, "¿Tienes el Curso Java?", Manual TypeScript).
-> 10. **Pantalla de Chat Individual:**
->     - Barra superior: "Usuario" y "Objeto a intercambiar".
->     - Tarjeta del objeto ofrecido con botón "Ver Objeto".
->     - Burbujas de mensaje (izquierda: otro usuario, derecha: tú).
->     - Campo de texto "Escribe un mensaje..." con icono de enviar.
->     - Barra inferior con el icono de Mensajes activo.
+>    - Menú: Mis Conjuntos, Mi Ropero (12), Conjuntos de hoy, Cerrar sesión.
+> 8. **Pantalla de Outfits (Conjuntos guardados):**
+>    - Título "Mis Outfits".
+>    - Buscador, filtros.
+>    - Rejilla de tarjetas con imagen del conjunto, nombre y prendas que lo componen.
+>    - Botón "Crear nuevo outfit".
 
 ---
 
@@ -94,105 +104,142 @@ Plataforma donde los usuarios publican objetos que ya no usan (libros, apuntes, 
 
 > **Pantallas diseñadas:**
 >
-> 1. **Pantalla de Login:** Interfaz centrada con el logo de Trukko, campos de "Usuario" y "Contraseña", botón "Iniciar sesión" y opción "Iniciar sin Ropero".
+> 1. **Pantalla de Login:** Interfaz centrada con el logo de Lookeo, campos de "Usuario" y "Contraseña", botón "Iniciar Sesión".
 > 2. **Pantalla de Inicio (Web):**
->    - Barra superior: menú hamburguesa, logo de Trukko centrado, icono de perfil "Tu Cuenta".
->    - Barra de navegación horizontal: Inicio, Favoritos, Subir, Mensaje.
->    - Buscador y rejilla de 4 columnas con tarjetas (imagen, icono de perfil, corazón de favorito).
->    - Barra inferior con 5 iconos: Inicio, Favoritos, Subir (+), Mensajes, Perfil.
-> 3. **Pantalla de Creación (Crear Objeto):** Similar a la móvil, pero adaptada a escritorio.
-> 4. **Pantalla de Mis Objetos:** Similar a la móvil, con rejilla más amplia.
-> 5. **Pantalla de Favoritos:** Similar a la móvil, con rejilla más amplia.
-> 6. **Pantalla de Ajuste de Perfil:** Similar a la móvil, adaptada a escritorio.
-> 7. **Pantalla de Mensajes (Lista de Chats):** Similar a la móvil, con más espacio.
-> 8. **Pantalla de Chat Individual:** Similar a la móvil, adaptada a escritorio.
+>    - Barra superior: menú hamburguesa, logo de Lookeo centrado, icono de perfil.
+>    - Barra de navegación horizontal: Conjunto, Subir Ropa, Ropero, Probador.
+>    - Rejilla de 3 columnas con tarjetas de prendas (imagen, tipo, color).
+> 3. **Pantalla de Creación (Web):** Similar a la móvil, adaptada a escritorio.
+> 4. **Pantalla de Ropero (Web):** Similar a la móvil, con rejilla más amplia.
+> 5. **Pantalla de Probador (Web):**
+>    - Área de subida de foto del usuario.
+>    - Filtros por categoría y estilo.
+>    - Botón "Probar conjunto".
+>    - Resultado: foto del usuario con el conjunto puesto.
+> 6. **Pantalla de Outfits (Web):** Listado de conjuntos guardados.
 
 ---
 
 ### **Funcionalidades clave:**
 
-- **Registro y login** de usuarios (con opción de "Iniciar sin Ropero").
-- **Publicación de objetos** con imagen, título, descripción, categoría, estado y valor aproximado.
-- **Sistema de solicitudes** con estados: pendiente / aceptada / rechazada.
-- **Historial de intercambios** y valoraciones.
-- **Sistema de favoritos** (corazón relleno/vacío).
-- **Mensajería interna** entre usuarios para negociar el trueque.
-- **Búsqueda y filtros** por categoría (Objetos, Servicios, Tareas) y recientes.
-- **Perfil de usuario** con objetos publicados, favoritos, mensajes e historial.
-- **Subida de imágenes** para los objetos publicados.
+- **Registro y login** de usuarios.
+- **Subida de prendas** con imagen, tipo, color, temporada y ocasión.
+- **Ropero personal** con buscador y filtros.
+- **Probador virtual con IA:**
+  - El usuario sube una foto suya de cuerpo entero.
+  - La IA superpone las prendas seleccionadas sobre su cuerpo.
+  - Genera una imagen realista del conjunto puesto.
+  - Selector de estilo (Casual, Formal, Urbano, Deportivo, Elegante, Streetwear).
+  - Botón "Otra combinación" para regenerar.
+- **Outfits:** guardar conjuntos favoritos con nombre y prendas.
+- **Perfil de usuario** con sus prendas, outfits e historial.
+- **Subida de imágenes** (multipart) para prendas y fotos del usuario.
 
 ---
 
 ### **Tecnologías previstas:**
 
-- **Backend:** Java + Spring Boot (API REST).
-- **Base de datos:** MySQL / PostgreSQL (usuarios, objetos, solicitudes, mensajes, favoritos).
+- **Backend:** (...).
+- **Base de datos:** (...).
 - **Frontend:** Angular o JS/TS.
 - **Subida de imágenes:** Multipart (almacenamiento local o en la nube).
-- **Mensajería:** WebSockets o polling para mensajes en tiempo real (opcional).
+- **IA para probador virtual:**
+  - **Opción A (simple):** remove.bg + OpenCV para superponer prendas.
+  - **Opción B (avanzada):** IDM-VTON, OOTDiffusion o CatVTON vía Hugging Face.
+- **IA generativa de imágenes:** Pollinations.ai, Black Forest Labs (FLUX) o Segmind.
 
 ---
 
 ### **Asignaturas que cubre:**
 
-- **Acceso a Datos** → relaciones usuario-objeto-solicitud-mensaje, transacciones, estados, historial.
-- **Desarrollo de Interfaces** → listados, detalle, formularios con imagen, sistema de favoritos, mensajería, navegación móvil/web.
-- **Programación de Servicios y Procesos** → API REST, tareas programadas (caducidad de solicitudes), mensajería (hilos/WebSockets).
-- **Sistemas de Gestión Empresarial** → flujo de negocio con reglas (estados de solicitud), roles, permisos.
+- **Acceso a Datos** → relaciones usuario-prenda-outfit, consultas, filtros, imágenes.
+- **Desarrollo de Interfaces** → pantallas de ropero, creación, probador, outfits; filtros visuales; subida de imágenes.
+- **Programación de Servicios y Procesos** → API REST propia + consumo de API externa (IA).
+- **Sistemas de Gestión Empresarial** → lógica de recomendación, estilos, historial.
 - **Programación** → backend Java con buenas prácticas.
 
 ---
 
 ### **Puntos fuertes:**
 
-- **Lógica de negocio real** (no es un CRUD plano): estados, solicitudes, mensajería, favoritos.
-- **Muy presentable en la defensa** gracias a los diseños móviles y web ya creados.
-- **Tarea programada** → cubre Programación de Servicios.
-- **Mensajería interna** → añade complejidad y valor al proyecto.
-- **Sistema de favoritos** → mejora la experiencia de usuario y la interactividad.
-- **Diseño responsive** → la misma app se adapta a móvil y web.
+- **Idea original y diferencial:** el probador virtual con IA es un gran atractivo.
+- **Paleta de colores elegante:** negro + dorado transmite premium.
+- **Estilos de moda definidos:** Old Money + Streetwear de lujo.
+- **IA integrada:** cubre Programación de Servicios y da valor añadido.
+- **Subida de imágenes:** cubre Desarrollo de Interfaces y Acceso a Datos.
+- **Muy visual y fácil de demostrar en vivo.**
+- **Diseño responsive:** la misma app se adapta a móvil y web.
 
 ---
 
 ### **Riesgos:**
 
-- **Más complejo de modelar** (estados, permisos, mensajería).
-- **Subida y gestión de imágenes** añade complejidad.
-- **Mensajería en tiempo real** puede requerir WebSockets o polling.
-- **Adaptación responsive** → asegurar que funciona en ambos formatos.
+- **Integración de IA para probador virtual:** puede ser compleja y consumir recursos.
+- **Subida y gestión de imágenes:** almacenamiento, formatos, peso.
+- **Dependencia de APIs externas:** manejar errores y límites de peticiones.
+- **Adaptación responsive:** asegurar que funciona en ambos formatos.
 
 ---
 
 ### **Ideas Planteadas**
 
-#### **1. Uso IA**
-- Que la IA le dé un **valor estimado** a los objetos para luego buscar productos de un valor similar.
-- **Ayuda en la creación** de un nuevo producto: sugerir categoría, descripción o valoración basada en la imagen.
-- **Recomendaciones personalizadas** de objetos según el historial del usuario.
+#### **1. Uso de IA**
+- **Probador virtual:** superponer prendas sobre la foto del usuario.
+- **Etiquetado automático:** al subir una prenda, la IA sugiere tipo, color y temporada.
+- **Recomendaciones personalizadas:** según el historial, los estilos preferidos y eltiempo de ese dia.
+- **Generación de outfits:** la IA crea combinaciones nuevas a partir del ropero.
 
 #### **2. Secciones**
-- **Intercambio de Tareas** → usuarios ofrecen realizar tareas a cambio de otras.
-- **Intercambio de Servicios** → usuarios ofrecen servicios (clases, reparaciones) a cambio de otros.
-- **Intercambio de Objetos Variados** → libros, apuntes, componentes, periféricos, etc.
+- **Conjunto del día:** recomendación diaria basada en el clima y la ocasión.
+- **Probador:** ver cómo te queda la ropa con IA.
+- **Ropero:** gestionar todas tus prendas.
+- **Outfits:** guardar y gestionar conjuntos favoritos.
+- **Perfil:** datos del usuario, preferencias, historial.
 
 #### **3. Extras posibles**
-- **Modo "trueque rápido"** con coincidencia automática entre usuarios.
-- **Estadísticas** de trueques realizados, objetos más solicitados, etc.
-- **Notificaciones push** para nuevas solicitudes o mensajes.
-- **Integración con calendario** para tareas o servicios con fecha.
+- **Modo "compartir outfit"** en redes sociales.
+- **Estadísticas de uso:** prendas más usadas, colores favoritos.
+- **Notificación diaria** con el conjunto sugerido.
+- **Integración con calendario** para saber la ocasión del día.
 
 ---
 
 ## 📅 Próximos pasos
 
 1. **Validar el diseño de pantallas** (móvil y web) con el equipo.
-2. **Decidir el stack definitivo** (backend, frontend, base de datos, mensajería).
-3. **Esbozar el modelo de datos** (usuarios, objetos, solicitudes, mensajes, favoritos).
-4. **Definir los endpoints de la API REST** (ej: `/api/objetos`, `/api/solicitudes`, `/api/mensajes`).
+2. **Decidir el stack definitivo** (backend, frontend, base de datos, IA).
+3. **Esbozar el modelo de datos** (usuarios, prendas, outfits, historial).
+4. **Definir los endpoints de la API REST** (ej: `/api/prendas`, `/api/outfits`, `/api/probador`).
 5. **Repartir tareas por asignatura** y crear issues en el repositorio.
 
 ---
 
-[Ver Idea 2 - MeteoLook](/MeteoLook/Readme.md)
+## 🗄️ Modelo de datos orientativo
 
-[Ver Idea 3 - Plataforma de transicion profesional](/Plataforma%20de%20transicion%20profesional/Readme.md)
+| Entidad | Campos principales |
+|---------|--------------------|
+| **Usuario** | id, nombre, email, contraseña, foto_perfil, ubicacion |
+| **Prenda** | id, usuario_id, imagen, tipo, color, temporada, ocasion, notas |
+| **Outfit** | id, usuario_id, nombre, imagen, fecha_creacion |
+| **Outfit_Prenda** | outfit_id, prenda_id |
+| **Probador** | id, usuario_id, foto_usuario, outfit_id, imagen_generada, fecha |
+| **Favorito** | id, usuario_id, prenda_id |
+
+---
+
+## 🔗 Endpoints orientativos
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `POST` | `/api/auth/register` | Registro de usuario. |
+| `POST` | `/api/auth/login` | Login. |
+| `GET` | `/api/prendas` | Listar prendas del usuario. |
+| `POST` | `/api/prendas` | Subir nueva prenda. |
+| `PUT` | `/api/prendas/{id}` | Editar prenda. |
+| `DELETE` | `/api/prendas/{id}` | Eliminar prenda. |
+| `GET` | `/api/outfits` | Listar outfits. |
+| `POST` | `/api/outfits` | Crear outfit. |
+| `POST` | `/api/probador` | Generar imagen con IA. |
+| `GET` | `/api/probador/{id}` | Obtener resultado. |
+
+---
