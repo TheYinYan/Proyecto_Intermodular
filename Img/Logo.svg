@@ -1,26 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fondo -->
   <rect x="26" y="26" width="460" height="460" rx="60" fill="#0A0A0A"/>
   <rect x="26" y="26" width="460" height="460" rx="60" fill="none" stroke="#D4AF37" stroke-width="3"/>
 
-  <!-- Monograma L -->
-  <text x="256" y="300" font-family="Playfair Display, Georgia, serif"
+  <!-- Base de la L (para que no flote) -->
+  <rect x="150" y="360" width="212" height="6" rx="3" fill="#D4AF37"/>
+
+  <!-- Monograma L (primero, para que la percha quede por encima) -->
+  <text x="256" y="350" font-family="Playfair Display, Georgia, serif"
         font-size="260" font-weight="700" fill="#D4AF37" text-anchor="middle">
     L
   </text>
 
-  <!-- Percha fina encima -->
+  <!-- Percha fina ENCIMA de la L, inclinada a la derecha -->
   <g fill="none" stroke="#FFFFFF" stroke-width="6"
-     stroke-linecap="round" stroke-linejoin="round">
-    <path d="M256 130 v-14 a10 10 0 1 1 10 -10"/>
-    <path d="M256 130 L216 168 L296 168 Z"/>
+     stroke-linecap="round" stroke-linejoin="round"
+     transform="rotate(15 256 170)">
+    <path d="M256 150 v-14 a10 10 0 1 1 10 -10"/>
+    <path d="M256 150 L216 188 L296 188 Z"/>
   </g>
-
-  <!-- Texto inferior -->
-  <text x="256" y="380" font-family="Playfair Display, Georgia, serif"
-        font-size="34" font-weight="400" fill="#FFFFFF" text-anchor="middle" letter-spacing="8">
-    LOOKEO
-  </text>
-
-  <!-- Línea decorativa -->
-  <line x1="180" y1="410" x2="332" y2="410" stroke="#D4AF37" stroke-width="2"/>
 </svg>
