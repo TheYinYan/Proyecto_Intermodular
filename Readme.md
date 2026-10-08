@@ -64,7 +64,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 #### En Balsamiq
 
-<video src="assets/Video/Movil-Diseno.mp4" controls style="max-width: 100%;"></video>
+<video src="https://raw.githubusercontent.com/TheYinYan/Lookeo/main/assets/Video/Movil-Diseno.mp4" controls style="max-width: 100%;"></video>
 
 > **Pantallas diseñadas:**
 >
