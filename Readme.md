@@ -58,6 +58,8 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ### **Diseño en Móvil**
 
+
+
 ![imagen](/Img/Movil.png)
 
 > **Pantallas diseñadas:**
@@ -104,6 +106,11 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 ---
 
 ### **Diseño en Web**
+
+#### En Balsamiq
+
+<video src="https://github.com/user-attachments/assets/d0784a4c-fb93-46b0-b584-83d22ba69416" controls style="max-width: 100%;"></video>
+
 
 ![imagen](/Img/Web.png)
 
