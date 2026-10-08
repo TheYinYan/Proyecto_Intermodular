@@ -6,8 +6,8 @@
 
 ## 👥 Equipo
 
-| Nombre   | Rol propuesto     | GitHub                                 |
-| -------- | ----------------- | -------------------------------------- |
+| Nombre   | Rol propuesto     | GitHub |
+|----------|-------------------|--------|
 | Samuel   | Programador/Líder | [Enlace](https://github.com/TheYinYan) |
 | Mari Paz | Programador       | [Enlace](https://github.com/mpjmar)    |
 
@@ -26,7 +26,6 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 - **Programación** → backend en Java con buenas prácticas.
 
 **Requisitos mínimos que debe cumplir la idea elegida:**
-
 - Backend en **Java** con API REST.
 - Base de datos **relacional** (MySQL / PostgreSQL).
 - Frontend que consuma la API (Angular, JS/TS, etc.).
@@ -41,13 +40,11 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo, color, temporada, ocasión) y la app le sugiere combinaciones de conjuntos. Además, incluye un **probador virtual con IA** que muestra cómo le queda la ropa al usuario, y permite guardar los conjuntos en la sección **Outfits**.
 
 **Paleta de colores:**
-
 - **Negro** (#000000) → fondo principal.
 - **Dorado** (#D4AF37) → acentos, botones, logo.
 - **Blanco** (#FFFFFF) → textos y elementos secundarios.
 
 **Estilos de moda que promueve:**
-
 - **Old Money / Elegante clásico:** blazers, camisas, pantalones de vestir, mocasines.
 - **Streetwear de lujo:** sudaderas oversize, zapatillas de diseño, chaquetas bomber.
 - **Minimalista / Clean:** básicos, colores neutros, líneas simples.
@@ -58,6 +55,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 [Enlace a Figma](https://www.figma.com/make/5IA4TMbDYNLwBl9n0uEql9/Lookeo-Virtual-Wardrobe-App?code-node-id=0-6&p=f&t=YLhPeV0QwY9BWW3k-0&fullscreen=1)
 
+
 ### **Diseño en Móvil**
 
 #### En Excalidraw
@@ -66,14 +64,7 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 #### En Balsamiq
 
-<video src="https://github.com/user-attachments/assets/6ad79546-9fb7-405b-ba99-c4213079eed6"
-         autoplay
-         muted
-         loop
-         playsinline
-         controls
-         style="max-width: 600px; width: 100%; border-radius: 12px;">
-</video>
+<video src="https://github.com/user-attachments/assets/6ad79546-9fb7-405b-ba99-c4213079eed6" controls style="max-width: 100%;"></video>
 
 > **Pantallas diseñadas:**
 >
@@ -210,14 +201,12 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 ### **Ideas Planteadas**
 
 #### **1. Uso de IA**
-
 - **Probador virtual:** superponer prendas sobre la foto del usuario.
 - **Etiquetado automático:** al subir una prenda, la IA sugiere tipo, color y temporada.
 - **Recomendaciones personalizadas:** según el historial, los estilos preferidos y eltiempo de ese dia.
 - **Generación de outfits:** la IA crea combinaciones nuevas a partir del ropero.
 
 #### **2. Secciones**
-
 - **Conjunto del día:** recomendación diaria basada en el clima y la ocasión.
 - **Probador:** ver cómo te queda la ropa con IA.
 - **Ropero:** gestionar todas tus prendas.
@@ -225,7 +214,6 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 - **Perfil:** datos del usuario, preferencias, historial.
 
 #### **3. Extras posibles**
-
 - **Modo "compartir outfit"** en redes sociales.
 - **Estadísticas de uso:** prendas más usadas, colores favoritos.
 - **Notificación diaria** con el conjunto sugerido.
@@ -245,30 +233,30 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ## 🗄️ Modelo de datos orientativo
 
-| Entidad           | Campos principales                                              |
-| ----------------- | --------------------------------------------------------------- |
-| **Usuario**       | id, nombre, email, contraseña, foto_perfil, ubicacion           |
-| **Prenda**        | id, usuario_id, imagen, tipo, color, temporada, ocasion, notas  |
-| **Outfit**        | id, usuario_id, nombre, imagen, fecha_creacion                  |
-| **Outfit_Prenda** | outfit_id, prenda_id                                            |
-| **Probador**      | id, usuario_id, foto_usuario, outfit_id, imagen_generada, fecha |
-| **Favorito**      | id, usuario_id, prenda_id                                       |
+| Entidad | Campos principales |
+|---------|--------------------|
+| **Usuario** | id, nombre, email, contraseña, foto_perfil, ubicacion |
+| **Prenda** | id, usuario_id, imagen, tipo, color, temporada, ocasion, notas |
+| **Outfit** | id, usuario_id, nombre, imagen, fecha_creacion |
+| **Outfit_Prenda** | outfit_id, prenda_id |
+| **Probador** | id, usuario_id, foto_usuario, outfit_id, imagen_generada, fecha |
+| **Favorito** | id, usuario_id, prenda_id |
 
 ---
 
 ## 🔗 Endpoints orientativos
 
-| Método   | Endpoint             | Descripción                 |
-| -------- | -------------------- | --------------------------- |
-| `POST`   | `/api/auth/register` | Registro de usuario.        |
-| `POST`   | `/api/auth/login`    | Login.                      |
-| `GET`    | `/api/prendas`       | Listar prendas del usuario. |
-| `POST`   | `/api/prendas`       | Subir nueva prenda.         |
-| `PUT`    | `/api/prendas/{id}`  | Editar prenda.              |
-| `DELETE` | `/api/prendas/{id}`  | Eliminar prenda.            |
-| `GET`    | `/api/outfits`       | Listar outfits.             |
-| `POST`   | `/api/outfits`       | Crear outfit.               |
-| `POST`   | `/api/probador`      | Generar imagen con IA.      |
-| `GET`    | `/api/probador/{id}` | Obtener resultado.          |
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `POST` | `/api/auth/register` | Registro de usuario. |
+| `POST` | `/api/auth/login` | Login. |
+| `GET` | `/api/prendas` | Listar prendas del usuario. |
+| `POST` | `/api/prendas` | Subir nueva prenda. |
+| `PUT` | `/api/prendas/{id}` | Editar prenda. |
+| `DELETE` | `/api/prendas/{id}` | Eliminar prenda. |
+| `GET` | `/api/outfits` | Listar outfits. |
+| `POST` | `/api/outfits` | Crear outfit. |
+| `POST` | `/api/probador` | Generar imagen con IA. |
+| `GET` | `/api/probador/{id}` | Obtener resultado. |
 
 ---
