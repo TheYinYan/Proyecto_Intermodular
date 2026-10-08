@@ -58,9 +58,13 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ### **Diseño en Móvil**
 
+#### En Excalidraw
 
+![imagen](/assets/Img/Movil.png)
 
-![imagen](/Img/Movil.png)
+#### En Balsamiq
+
+<video src="https://github.com/user-attachments/assets/6ad79546-9fb7-405b-ba99-c4213079eed6" controls style="max-width: 100%;"></video>
 
 > **Pantallas diseñadas:**
 >
@@ -107,12 +111,13 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 
 ### **Diseño en Web**
 
+#### En Excalidraw
+
+![imagen](/assets/Img/Web.png)
+
 #### En Balsamiq
 
 <video src="https://github.com/user-attachments/assets/d0784a4c-fb93-46b0-b584-83d22ba69416" controls style="max-width: 100%;"></video>
-
-
-![imagen](/Img/Web.png)
 
 > **Pantallas diseñadas:**
 >
