@@ -36,6 +36,8 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 
 ## 👕 "Lookeo": Armario Virtual con Probador IA
 
+#### [**> Diseños de la App y Web**](/page/Diseño.md)
+
 **Descripción:**
 Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo, color, temporada, ocasión) y la app le sugiere combinaciones de conjuntos. Además, incluye un **probador virtual con IA** que muestra cómo le queda la ropa al usuario, y permite guardar los conjuntos en la sección **Outfits**.
 
@@ -50,8 +52,6 @@ Aplicación web/móvil donde el usuario sube fotos de su ropa, la etiqueta (tipo
 - **Minimalista / Clean:** básicos, colores neutros, líneas simples.
 
 ---
-
-### [**Diseños**](/page/Diseño.md)
 
 ### **Funcionalidades clave:**
 
