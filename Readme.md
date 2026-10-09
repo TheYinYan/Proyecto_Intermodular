@@ -118,7 +118,7 @@ https://github.com/user-attachments/assets/6e9054da-7f27-454d-9dcb-682199a922cc
 
 #### En Balsamiq
 
-<video src="assets/Video/Web-Diseno.mp4" width="100%" controls ></video>
+https://github.com/user-attachments/assets/59c2bbd1-d73f-4ced-8db2-84bf3e8ef1e0
 
 > **Pantallas diseñadas:**
 >
