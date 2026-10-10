@@ -6,10 +6,10 @@
 
 ## 👥 Equipo
 
-| Nombre   | Rol propuesto     | GitHub |
+| Nombre   | Rol               | GitHub |
 |----------|-------------------|--------|
-| Samuel   | Programador/Líder | [Enlace](https://github.com/TheYinYan) |
-| Mari Paz | Programador       | [Enlace](https://github.com/mpjmar)    |
+| Samuel   | Desarrollador     | [@TheYinYan](https://github.com/TheYinYan) |
+| Mari Paz | Desarrolladora    | [@mpjmar](https://github.com/mpjmar)       |
 
 > Los roles son orientativos y se pueden rotar durante el proyecto.
 
@@ -22,7 +22,7 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 - **Acceso a Datos** → base de datos real, relaciones, consultas.
 - **Desarrollo de Interfaces** → frontend funcional y usable.
 - **Programación de Servicios y Procesos** → API REST, tareas programadas, consumo de servicios externos.
-- **Sistemas de Gestión Empresarial** → lógica de negocio, roles, flujos.
+- **Sistemas de Gestión Empresarial** → lógica de negocio, roles, flujos. 
 - **Programación** → backend en Java con buenas prácticas.
 
 **Requisitos mínimos que debe cumplir la idea elegida:**
@@ -35,6 +35,15 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 ---
 
 ## 👕 "Lookeo": Armario Virtual con Probador IA
+
+### 🧩 Repositorios del proyecto
+
+| Repo | Descripción | Enlace |
+|------|-------------|--------|
+| **Principal** | Descripción del proyecto | [Enlace](https://github.com/TheYinYan/Proyecto_Intermodular) |
+| **Lookeo-Móvil** | App móvil (este repo) | [Enlace](https://github.com/TheYinYan/Lookeo-Movil) |
+| **Lookeo-Web** | App web | [Enlace](https://github.com/TheYinYan/Lookeo-Web) |
+
 
 #### [**> Diseños de la App y Web**](/page/Diseño.md)
 
