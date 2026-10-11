@@ -41,8 +41,8 @@ _Requisitos mínimos que debe cumplir la idea elegida:_
 
 | Repo           | Descripción              | Enlace                                                       |
 | -------------- | ------------------------ | ------------------------------------------------------------ |
-| _Principal_    | Descripción del proyecto | [Enlace](https://github.com/TheYinYan/Proyecto_Intermodular) |
-| _Lookeo-Móvil_ | App móvil (este repo)    | [Enlace](https://github.com/TheYinYan/Lookeo-Movil)          |
+| _Principal_    | Descripción del proyecto (este repo)| [Enlace](https://github.com/TheYinYan/Proyecto_Intermodular) |
+| _Lookeo-Móvil_ | App móvil                | [Enlace](https://github.com/TheYinYan/Lookeo-Movil)          |
 | _Lookeo-Web_   | App web                  | [Enlace](https://github.com/TheYinYan/Lookeo-Web)            |
 
 #### [_> Diseños de la App y Web_](/page/Diseño.md)
