@@ -37,12 +37,12 @@ En la implementación, las relaciones se convierten en _claves foráneas_.
 
 #### Claves foráneas
 
-| Tabla           | Clave foránea         | Referencia      |
-| --------------- | --------------------- | --------------- |
-| _Prenda_        | id_usuario            | Usuario         |
-| _Outfit_        | id_usuario            | Usuario         |
-| _Outfit_Prenda_ | id_outfit, id_prenda  | Outfit, Prenda  |
-| _Probador_      | id_outfit, id_usuario | Outfit, Usuario |
+| Tabla      | Clave foránea         | Referencia      |
+| ---------- | --------------------- | --------------- |
+| _Prenda_   | id_usuario            | Usuario         |
+| _Outfit_   | id_usuario            | Usuario         |
+| _Forma_    | id_outfit, id_prenda  | Outfit, Prenda  |
+| _Probador_ | id_outfit, id_usuario | Outfit, Usuario |
 
 #### Script SQL
 
@@ -77,7 +77,7 @@ CREATE TABLE outfit (
   FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
-CREATE TABLE outfit_prenda (
+CREATE TABLE forma (
   id_outfit INT,
   id_prenda INT,
   PRIMARY KEY (id_outfit, id_prenda),
