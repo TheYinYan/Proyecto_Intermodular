@@ -2,7 +2,7 @@
 
 ## **Diseño con Figma**
 
-[Enlace a Figma](https://www.figma.com/make/5IA4TMbDYNLwBl9n0uEql9/Lookeo-Virtual-Wardrobe-App?code-node-id=0-6&p=f&t=YLhPeV0QwY9BWW3k-0&fullscreen=1)
+🎨 **[Ver diseño en Figma](https://www.figma.com/proto/XyBIOpktTtaC3KufTq86yi/Lookeo-Movil?node-id=8-1247&p=f&t=N6cpcoJ9UiQCCNC3-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)**
 
 
 ## **Diseño en Móvil**
