@@ -66,18 +66,19 @@ _Estilos de moda que promueve:_
 
 ### _Funcionalidades clave:_
 
-- _Registro y login_ de usuarios.
-- _Subida de prendas_ con imagen, tipo, color, temporada y ocasión.
-- _Ropero personal_ con buscador y filtros.
-- _Probador virtual con IA:_
-  - El usuario sube una foto suya de cuerpo entero.
-  - La IA superpone las prendas seleccionadas sobre su cuerpo.
-  - Genera una imagen realista del conjunto puesto.
+- **_Registro y login_** de usuarios.
+- **_Ropero personal_** con buscador y filtros.
+- **_Subida de prendas_**: 
+  - _En la App Móvil:_ Uso prioritario de la cámara y galería del dispositivo para agilizar el proceso de creación de ropa.
+  - _En la Web:_ Subida de archivos desde el ordenador.
+- **_Probador virtual con IA (Prioritario en Web):_**
+  - El usuario sube una foto de cuerpo entero.
+  - La IA superpone las prendas seleccionadas sobre su cuerpo generando una imagen realista.
   - Selector de estilo (Casual, Formal, Urbano, Deportivo, Elegante, Streetwear).
-  - Botón "Otra combinación" para regenerar.
-- _Outfits:_ guardar conjuntos favoritos con nombre y prendas.
-- _Perfil de usuario_ con sus prendas, outfits e historial.
-- _Subida de imágenes_ (multipart) para prendas y fotos del usuario.
+  - *Nota: Debido a la alta carga de procesamiento que requiere la IA, esta funcionalidad se ha centralizado en la versión Web. En la App Móvil se prioriza la visualización del conjunto del día y la gestión rápida del ropero.*
+- **_Outfits:_** guardar conjuntos favoritos con nombre y prendas.
+- **_Favoritos:_** sección para guardar prendas y looks preferidos (disponible en ambas).
+- **_Perfil de usuario_** con sus prendas, outfits e historial.
 
 ---
 
