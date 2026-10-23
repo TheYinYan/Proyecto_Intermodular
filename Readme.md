@@ -23,12 +23,12 @@ Diseñar y desarrollar una aplicación completa que integre los conocimientos de
 - _Desarrollo de Interfaces_ → frontend funcional y usable.
 - _Programación de Servicios y Procesos_ → API REST, tareas programadas, consumo de servicios externos.
 - _Sistemas de Gestión Empresarial_ → lógica de negocio, roles, flujos.
-- _Programación_ → backend en Java con buenas prácticas.
+- _Programación_ → backend en Node y Express con buenas prácticas.
 
 _Requisitos mínimos que debe cumplir la idea elegida:_
 
-- Backend en _Java_ con API REST.
-- Base de datos _relacional_ (MySQL / PostgreSQL).
+- Backend en Node y Express con API REST.
+- Base de datos _relacional_ (Supabase / PostgreSQL).
 - Frontend que consuma la API (Angular, JS/TS, etc.).
 - Autenticación de usuarios.
 - Al menos _una_ de estas: consumo de API externa, tareas programadas, roles/permisos, subida de archivos.
@@ -84,8 +84,8 @@ _Estilos de moda que promueve:_
 
 ### _Tecnologías previstas:_
 
-- _Backend:_ (...).
-- _Base de datos:_ (...).
+- _Backend:_ En Node y Express con API REST.
+- _Base de datos:_ Supabase / PostgreSQL.
 - _Frontend:_ Angular o JS/TS.
 - _Subida de imágenes:_ Multipart (almacenamiento local o en la nube).
 - _IA para probador virtual:_
@@ -101,7 +101,7 @@ _Estilos de moda que promueve:_
 - _Desarrollo de Interfaces_ → pantallas de ropero, creación, probador, outfits; filtros visuales; subida de imágenes.
 - _Programación de Servicios y Procesos_ → API REST propia + consumo de API externa (IA).
 - _Sistemas de Gestión Empresarial_ → lógica de recomendación, estilos, historial.
-- _Programación_ → backend Java con buenas prácticas.
+- _Programación_ → backend Node y Express con buenas prácticas.
 
 ---
 
