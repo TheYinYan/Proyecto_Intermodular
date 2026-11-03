@@ -44,6 +44,7 @@ _Requisitos mínimos que debe cumplir la idea elegida:_
 | _Principal_    | Descripción del proyecto (este repo)| [Enlace](https://github.com/TheYinYan/Proyecto_Intermodular) |
 | _Lookeo-Móvil_ | App móvil                | [Enlace](https://github.com/TheYinYan/Lookeo-Movil)          |
 | _Lookeo-Web_   | App web                  | [Enlace](https://github.com/TheYinYan/Lookeo-Web)            |
+| _Server-Lookeo_| Servidor/API REST        | [Enlace](https://github.com/TheYinYan/Server-Lookeo)         |
 
 #### [_> Diseños de la App y Web_](/page/Diseño.md)
 
@@ -84,7 +85,7 @@ _Estilos de moda que promueve:_
 
 ### _Tecnologías previstas:_
 
-- _Backend:_ En Node y Express con API REST.
+- _Backend:_ En Node y Express con API REST (TypeScript, Prisma, PostgreSQL).
 - _Base de datos:_ Supabase / PostgreSQL.
 - _Frontend:_ Angular o JS/TS.
 - _Subida de imágenes:_ Multipart (almacenamiento local o en la nube).
@@ -158,29 +159,32 @@ _Estilos de moda que promueve:_
 
 ---
 
-## 🔗 Endpoints orientativos
+## 🔗 Endpoints de la API REST
 
-| Método | Endpoint           | Descripción                 |
-| ------ | ------------------ | --------------------------- |
-| POST   | /api/auth/register | Registro de usuario.        |
-| POST   | /api/auth/login    | Login.                      |
-| GET    | /api/prendas       | Listar prendas del usuario. |
-| POST   | /api/prendas       | Subir nueva prenda.         |
-| PUT    | /api/prendas/{id}  | Editar prenda.              |
-| DELETE | /api/prendas/{id}  | Eliminar prenda.            |
-| GET    | /api/outfits       | Listar outfits.             |
-| POST   | /api/outfits       | Crear outfit.               |
-| POST   | /api/probador      | Generar imagen con IA.      |
-| GET    | /api/probador/{id} | Obtener resultado.          |
+| Método | Endpoint           | Descripción                 | Estado |
+| ------ | ------------------ | --------------------------- | ------ |
+| POST   | `/api/auth/register`| Registro de usuario.        | ✅ Implementado |
+| POST   | `/api/auth/login`   | Login (devuelve token JWT). | ✅ Implementado |
+| GET    | `/api/users`        | Listar usuarios.            | ✅ Implementado |
+| PUT    | `/api/users/{id}`   | Actualizar usuario.         | ✅ Implementado |
+| DELETE | `/api/users/{id}`   | Eliminar usuario.           | ✅ Implementado |
+| GET    | `/api/prendas`      | Listar prendas del usuario. | ✅ Implementado |
+| POST   | `/api/prendas`      | Subir nueva prenda.         | ✅ Implementado |
+| PUT    | `/api/prendas/{id}` | Editar prenda.              | ✅ Implementado |
+| DELETE | `/api/prendas/{id}` | Eliminar prenda.            | ✅ Implementado |
+| GET    | `/api/outfits`      | Listar outfits.             | ⏳ En desarrollo |
+| POST   | `/api/outfits`      | Crear outfit.               | ⏳ En desarrollo |
+| POST   | `/api/probador`     | Generar imagen con IA.      | ⏳ En desarrollo |
+| GET    | `/api/probador/{id}`| Obtener resultado.          | ⏳ En desarrollo |
 
 ---
 
 ## 📅 Próximos pasos
 
-1. _Validar el diseño de pantallas_ (móvil y web) con el equipo.
-2. _Decidir el stack definitivo_ (backend, frontend, base de datos, IA).
-3. _Esbozar el modelo de datos_ (usuarios, prendas, outfits, historial).
-4. _Definir los endpoints de la API REST_ (ej: /api/prendas, /api/outfits, /api/probador).
-5. _Repartir tareas por asignatura_ y crear issues en el repositorio.
-
----
+1. _Validar el diseño de pantallas_ (móvil y web) con el equipo. ✅
+2. _Decidir el stack definitivo_ (backend, frontend, base de datos, IA). ✅
+3. _Esbozar el modelo de datos_ (usuarios, prendas, outfits, historial). ✅
+4. _Definir los endpoints de la API REST_ (ej: /api/prendas, /api/outfits, /api/probador). ✅
+5. _Repartir tareas por asignatura_ y crear issues en el repositorio. ✅
+6. _Implementar el Backend_ (Auth, Users y Prendas ya funcionando con base de datos real). ✅
+7. _Comenzar el desarrollo de los Frontends_ (Web con Angular y Móvil con Kotlin). ⏳
